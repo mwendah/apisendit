@@ -17,7 +17,7 @@ class ParcelModel(object):
 
 	paylaod={
 
-	"id":len(self.db)+1m
+	"id":len(self.db)+1
 	"destination"=self.destination
 	"recipient"=self.recipient
 	"sender"=self.sender
