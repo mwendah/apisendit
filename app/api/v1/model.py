@@ -29,28 +29,28 @@ class ParcelModel(object):
 	parcel.parcels.append(payload)
 
 
-def get_All(self):
+        def get_All(self):
 	return self.db
 
    
 	def get_single_parcel(self,id):
 	res=self.db
 	result=[result for  result in res if result['id']==str
-  (id)]
-     return result
+        (id)]
+        return result
 
   	def cancel_order(self,id)
   	res=self.db
   	result=[result for  result in res if result['id']==str
-  (id)]
-  result=result[0]
-  result['status']=='terminated'
+        (id)]
+         result=result[0]
+         result['status']=='terminated'
 
-  def user_parcels(self,username):
+        def user_parcels(self,username):
   	res=self.db
   	result=[result for  result in res if result['username']==str
-  (username)]
-     return result
+        (username)]
+        return result
  
 
 
