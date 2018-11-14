@@ -8,6 +8,7 @@ install:
 branches:
   except:
   - develop
+  - master
 
 script:
   - pytest
