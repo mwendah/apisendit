@@ -25,9 +25,8 @@ new_data={
 class  Test_Random(TestParcelData):
 		
 
-def test_post(self):
-	response=self.client.post(
-'/DataDelivery',data=json.dumps(self.data),content_type='application/json')
+        def test_post(self):
+	response=self.client.post('/DataDelivery',data=json.dumps(self.data),content_type='application/json')
 	result=json.loads(response.data.decode())
 	self.assertEqual(result['message'],'Hello mate',message'Error in test')
 	assert response.status_code==200
@@ -36,15 +35,15 @@ def test_post(self):
 
 
 	def test_get(self):
-        response=self.client.get(
-        '/DataDelivery',data=json.dumps(self.data),content_type='application/json')
-        	result=json.loads(response.data.decode())
-        	self.assertEqual(result['message'],'Hello mate',message'Error in test')
-        	assert response.status_code==200
+        response=self.client.get('/DataDelivery',data=json.dumps(self.data),content_type='application/json')
+        result=json.loads(response.data.decode())
+        self.assertEqual(result['message'],'Hello mate',message'Error in test')
+        assert response.status_code==200
 
-		def test_put(self):
-response=self.client.get(
-'/DataDelivery',data=json.dumps(self.data),content_type='application/json')
+		
+		
+	def test_put(self):
+        response=self.client.get('/DataDelivery',data=json.dumps(self.data),content_type='application/json')
 	result=json.loads(response.data.decode())
 	self.assertEqual(result['message'],'Hello mate',message'Error in test')
 	assert response.status_code==400
