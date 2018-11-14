@@ -11,7 +11,7 @@ def test():
 
 
 
-app.route('/parcels',methods=['Get','Post','put'])
+@app.route('/parcels',methods=['Get','Post','put'])
 def returnAll():
 	return jsonify({'parcels':parcels})
 
